@@ -1,132 +1,72 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Monica Baracho - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Monica Baracho | Economist & Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="is-preload">
+<body>
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
 
-    <div id="wrapper" class="fade-in">
+    <header>
+        <img src="monica.jpn.jpeg" alt="Monica Baracho" class="profile-pic">
+        <h1>Monica Baracho</h1>
+        <p>Economist & Data Analyst</p>
+        <p>Turning data into insight. Passionate about economics, analytics, and solving real-world problems.</p>
+    </header>
 
-        <!-- Intro -->
-        <div id="intro">
-            <h1>Monica Baracho</h1>
-            <p>Economist & Data Analyst | Passionate about turning data into insights</p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an economist and data analyst passionate about uncovering insights from data, building models, and driving smart decisions. With experience in international trade, marketing analytics, and economic research, I bring a unique mix of analytical and communication skills to every project.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>2Market</h3>
+            <p>A data analytics project exploring customer demographics, purchase behavior, and campaign strategy.</p>
+            <div class="badges">
+                <span class="badge">R</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Tableau</span>
+            </div>
+            <a class="project-link" href="2Market.html">View Project →</a>
         </div>
 
-        <!-- Header -->
-        <header id="header">
-            <a class="logo">My Portfolio</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">My Portfolio</a></li>
-                <li><a href="2Market.html">2Market Project</a></li>
-                <li><a href="BrazilDashboard.html">Brazil Trade Dashboard</a></li>
-            </ul>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/monica-baracho-2735b0a8/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/murbaracho" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- About Me -->
-            <article class="post featured">
-                <header class="major">
-                    <h2>About Me</h2>
-                    <p>Hi, I’m Monica! I’m an economist and data analyst passionate about using data to uncover insights, build models, and support smart decision-making.  
-                    I have experience in international trade, marketing analytics, and economic research, and I’m highly skilled with R, SQL, Python, and Tableau.</p>
-                    <p>Scroll down to explore some of my projects and feel free to reach out through the contact section below!</p>
-                </header>
-                <a class="image main"><img src="monica.jpg" alt="Monica Baracho" /></a>
-                <ul class="actions special">
-                    <li><a href="https://www.linkedin.com/in/monica-baracho-2735b0a8/" class="button large">Check out my LinkedIn</a></li>
-                    <li><a href="https://github.com/murbaracho" class="button large">Check out my GitHub</a></li>
-                </ul>
-            </article>
-
-            <!-- Projects Section -->
-            <article class="post featured">
-                <header class="major">
-                    <h2>My Projects</h2>
-                </header>
-            </article>
-
-            <section class="posts">
-                <article>
-                    <header>
-                        <h2>2Market Customer Purchase Behavior</h2>
-                    </header>
-                    <a class="image fit"><img src="2market.jpg" alt="2Market Project" /></a>
-                    <p>Scenario: 2Market, a global supermarket, wanted to understand customer demographics, advertising effectiveness, and product sales trends.  
-                    Task: Analyzed datasets using R and SQL, and presented insights through interactive Tableau dashboards.</p>
-                    <ul class="actions special">
-                        <li><a href="2Market.html" class="button">More about this</a></li>
-                    </ul>
-                </article>
-
-                <article>
-                    <header>
-                        <h2>Brazil Trade Dashboard</h2>
-                    </header>
-                    <a class="image fit"><img src="brazil.jpg" alt="Brazil Dashboard" /></a>
-                    <p>Scenario: Built a dashboard to visualize Brazil’s export, import, and macroeconomic data trends.  
-                    Task: Cleaned and analyzed datasets using Python and Plotly, and created an Excel model for forecasting key indicators.</p>
-                    <ul class="actions special">
-                        <li><a href="BrazilDashboard.html" class="button">More about this</a></li>
-                    </ul>
-                </article>
-            </section>
-
+        <div class="project-card">
+            <h3>Brazil Trade Dashboard</h3>
+            <p>An interactive dashboard tracking Brazil’s exports, imports, and macroeconomic indicators.</p>
+            <div class="badges">
+                <span class="badge">Python</span>
+                <span class="badge">Plotly</span>
+                <span class="badge">Excel</span>
+            </div>
+            <a class="project-link" href="#">Coming Soon</a>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Location</h3>
-                    <p>London, United Kingdom</p>
-                </section>
-                <section>
-                    <h3>Email</h3>
-                    <p><a href="#">monicabaracho@gmail.com</a></p>
-                </section>
-                <section>
-                    <h3>Social</h3>
-                    <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/monica-baracho-2735b0a8/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://github.com/murbaracho" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                    </ul>
-                </section>
-            </section>
-        </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: monicabaracho@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/monica-baracho-2735b0a8/" target="_blank">Monica Baracho</a></p>
+        <p>GitHub: <a href="https://github.com/murbaracho" target="_blank">Monica’s GitHub</a></p>
+    </section>
 
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul><li>&copy; Monica Baracho</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-        </div>
+    <footer>
+        <p>&copy; 2025 Monica Baracho</p>
+    </footer>
 
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+    </script>
 </body>
 </html>
