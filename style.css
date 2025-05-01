@@ -1,37 +1,156 @@
-/* === Monica's custom styles === */
-
 body {
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
     background: linear-gradient(to right, #f9f9f9, #e6f2f8);
     color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
-#intro h1 {
-    font-size: 3em;
-    color: #007acc;
+header, footer {
+    text-align: center;
 }
 
-.image.main img {
+header {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 180px;
     border-radius: 50%;
-    max-width: 250px;
-    margin: 0 auto 20px;
-    display: block;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
-.image.main img:hover {
+.profile-pic:hover {
     transform: scale(1.05);
 }
 
-section.posts article {
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-section.posts article:hover {
+nav a {
+    margin: 0 15px;
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #007acc;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.project-link {
+    font-weight: bold;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 40px;
+    color: #777;
+}
+
+.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode section {
+    background: #1e1e1e;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    background: #007acc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #005f99;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #007acc;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.badges {
+    margin-bottom: 10px;
 }
 
 html {
