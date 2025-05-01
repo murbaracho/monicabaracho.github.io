@@ -6,8 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
+
     <header>
-        <img src="monica.jpg" alt="Monica Baracho" class="profile-pic">
+        <img src="monica.jpn.jpeg" alt="Monica Baracho" class="profile-pic">
         <h1>Monica Baracho</h1>
         <p>Economist & Data Analyst</p>
         <p>Turning data into insight. Passionate about economics, analytics, and solving real-world problems.</p>
@@ -26,28 +28,13 @@
 
     <section id="projects">
         <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>2Market</h3>
-            <p>A data analytics project exploring customer demographics, purchase behavior, and campaign strategy.</p>
-            <div class="badges">
-                <span class="badge">R</span>
-                <span class="badge">SQL</span>
-                <span class="badge">Tableau</span>
-            </div>
-            <a class="project-link" href="2Market.html">View Project →</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Brazil Trade Dashboard</h3>
-            <p>An interactive dashboard tracking Brazil’s exports, imports, and macroeconomic indicators.</p>
-            <div class="badges">
-                <span class="badge">Python</span>
-                <span class="badge">Plotly</span>
-                <span class="badge">Excel</span>
-            </div>
-            <a class="project-link" href="#">Coming Soon</a>
-        </div>
+        <ul>
+            <li>
+                <strong>2Market</strong> – A data analytics project exploring customer demographics, purchase behavior, and campaign strategy. Built dashboards and visualizations using R, SQL, and Tableau.
+                <br>
+                <a class="project-link" href="2Market.html">View 2Market project</a>
+            </li>
+        </ul>
     </section>
 
     <section id="contact">
@@ -60,5 +47,11 @@
     <footer>
         <p>&copy; 2025 Monica Baracho</p>
     </footer>
+
+    <script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+    </script>
 </body>
 </html>
