@@ -115,6 +115,44 @@ footer {
     background: #005f99;
 }
 
+.project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #007acc;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.badges {
+    margin-bottom: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
