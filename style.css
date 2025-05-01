@@ -7,6 +7,9 @@ body {
 header, footer {
     text-align: center;
 }
+header {
+    margin-bottom: 30px;
+}
 h1 {
     font-size: 2.5em;
     margin-bottom: 5px;
@@ -22,14 +25,18 @@ a {
 a:hover {
     text-decoration: underline;
 }
+a.project-link {
+    font-weight: bold;
+}
 section {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 footer {
     font-size: 0.9em;
     margin-top: 40px;
+    color: #777;
 }
