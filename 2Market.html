@@ -1,40 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>2Market Project | Monica Baracho</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(to right, #0d6efd, #0dcaf0);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        section {
+            background: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #212529;
+            color: white;
+            font-size: 0.9rem;
+        }
+        h1, h2 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #0d6efd;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn-download {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .btn-download:hover {
+            background-color: #0a58ca;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>2Market Project</h1>
         <p>Data Analytics Case Study by Monica Baracho</p>
     </header>
+
     <section>
         <h2>Project Overview</h2>
-        <p>The 2Market project explores customer demographics, purchase behavior, and campaign strategy. I used R, SQL, and Tableau to create dashboards and analyze patterns that help guide marketing decisions.</p>
+        <p>
+            The 2Market project explores customer demographics, purchase behavior, and campaign strategy. 
+            I used R, SQL, and Tableau to create dashboards and analyze patterns that help guide marketing decisions.
+        </p>
     </section>
+
     <section>
         <h2>Key Insights</h2>
         <ul>
-            <li>Identified top customer segments by income and age.</li>
-            <li>Analyzed advertising channel effectiveness on spend.</li>
-            <li>Created visual dashboards to communicate results to stakeholders.</li>
+            <li>Average customer age ~55 years; married customers dominate the segment (~39%).</li>
+            <li>Positive correlation between age, income, and education.</li>
+            <li>PhD/Master’s customers show the highest average spend.</li>
+            <li>Instagram is the top ad channel for high-income customers ($90–$100K).</li>
+            <li>Spain leads with highest total spend and social ad conversion.</li>
         </ul>
     </section>
+
     <section>
         <h2>Tools Used</h2>
         <p>R, SQL, Tableau, Excel</p>
     </section>
+
     <section>
         <h2>Downloads</h2>
-        <ul>
-            <li><a href="Baracho_Monica_2Market.pdf" target="_blank">2Market Report (PDF)</a></li>
-            <li><a href="2Market Analysis.pptx" target="_blank">2Market Presentation (PPTX)</a></li>
-            <li><a href="Baracho_Monica_2market.twbx" target="_blank">Tableau Dashboard (TWBX)</a></li>
-        </ul>
+        <a href="Baracho_Monica_2Market.pdf" class="btn-download" target="_blank">Download Report (PDF)</a>
+        <a href="2Market Analysis.pptx" class="btn-download" target="_blank">Download Presentation (PPTX)</a>
+        <a href="Baracho_Monica_2market.twbx" class="btn-download" target="_blank">Download Tableau File (TWBX)</a>
     </section>
+
+    <section>
+        <h2>Interactive Dashboards</h2>
+        <p>If you would like to explore the interactive Tableau dashboards, please contact me via LinkedIn or email for access, or visit my Tableau Public profile (link can be added here).</p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Monica Baracho</p>
+        &copy; 2025 Monica Baracho
     </footer>
+
 </body>
 </html>
