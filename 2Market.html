@@ -3,43 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2Market Project - Monica Baracho</title>
+    <title>2Market Project — Monica Baracho</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="text-center p-5 bg-light">
-        <h1>2Market Customer Purchase Behavior</h1>
-        <p class="lead">Analyzed demographics, purchasing patterns, and ad effectiveness for a global supermarket using SQL, Tableau, and R. Key insights revealed that high-income, highly educated, older customers are the top spenders, with Instagram driving the most ad conversions. Built predictive models explaining 73% of spending variance, supporting targeted campaigns and data-driven marketing strategies.</p>
-    </header>
-
     <section class="container my-5">
-        <h2 class="text-center mb-4">Download Project Files</h2>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <a href="2Market Analysis.pptx" download>Download Presentation (.pptx)</a>
-            </li>
-            <li class="list-group-item">
-                <a href="2Market_Final_Regression_Report.pdf" download>Download Regression Report (.pdf)</a>
-            </li>
-            <li class="list-group-item">
-                <a href="2Market.html" download>Download Project Summary (.html)</a>
-            </li>
-            <li class="list-group-item">
-                <a href="Baracho_Monica_2Market.pdf" download>Download Full Report (.pdf)</a>
-            </li>
-            <li class="list-group-item">
-                <a href="Baracho_Monica_2market.twbx" download>Download Tableau Workbook (.twbx)</a>
-            </li>
-        </ul>
+        <h1 class="text-center mb-4">2Market Customer Purchase Behavior</h1>
+        <p class="text-center">
+            This project explores customer demographics, spending patterns, and advertising effectiveness across channels,
+            using R, SQL, Tableau, and Excel. Below, you’ll find key dashboard visualizations and insights.
+        </p>
     </section>
 
     <section class="container my-5">
-        <h2 class="text-center mb-4">Interactive Tableau Dashboard</h2>
-        <div class="ratio ratio-16x9">
-            <iframe src="https://public.tableau.com/app/profile/monica.baracho/viz/Baracho_Monica_2market/Dashboard1CustomerDemographicsBehaviour" 
-                    frameborder="0" allowfullscreen></iframe>
+        <h2 class="mb-4">Key Findings</h2>
+
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Demographics & Spending Patterns</h5>
+                <p class="card-text">
+                    • Average customer age: ~55 years (44 if base year 2014)<br>
+                    • Married customers: largest segment (~857, 38.7%)<br>
+                    • Positive correlation between age, income, education<br>
+                    • Master’s and PhD holders spend the most<br>
+                    • Top products: liquor, non-vegetables (especially among married, highly educated)
+                </p>
+            </div>
         </div>
+
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">High-Income Segment Analysis ($90K–$100K)</h5>
+                <p class="card-text">
+                    • Average age: 53 years<br>
+                    • Single and divorced spend the most<br>
+                    • 60% of purchases still in-store<br>
+                    • Instagram is the top-performing ad channel<br>
+                    • No young kids = more premium spending
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Country Spend & Ad Summary</h5>
+                <p class="card-text">
+                    • Spain leads: $659,557 spend, 36% social ad conversion<br>
+                    • Canada, South Africa ~31% each<br>
+                    • Montenegro: no social conversions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="mb-4">Dashboard Visuals</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="Dashboard1.png" class="img-fluid rounded shadow-sm" alt="Dashboard 1">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="Dashboard2.png" class="img-fluid rounded shadow-sm" alt="Dashboard 2">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="Dashboard3.png" class="img-fluid rounded shadow-sm" alt="Dashboard 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center my-4">
+        <a href="Baracho_Monica_2Market.pdf" class="btn btn-success btn-lg" download>
+            Download Full Report (PDF)
+        </a>
+    </section>
+
+    <section class="text-center my-4">
+        <a href="https://public.tableau.com/views/Baracho_Monica_2market/Dashboard1CustomerDemographicsBehaviour?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+           class="btn btn-primary btn-lg d-inline-flex align-items-center gap-2" target="_blank" rel="noopener">
+            <i class="fas fa-chart-bar"></i>
+            View Interactive Dashboard Online
+        </a>
+    </section>
+
+    <section class="text-center my-4">
+        <a href="index.html" class="btn btn-outline-primary">
+            ← Back to Portfolio
+        </a>
     </section>
 
     <footer class="text-center py-3 bg-primary text-white">
